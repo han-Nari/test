@@ -1,0 +1,23 @@
+section {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	width: 40vw;
+	height: 300px;
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 2rem;
+}
+
+.top {
+	display: grid;
+}
+
+.box .bottom {
+	text-align: center;
+}

@@ -1,0 +1,33 @@
+@page {
+	size: A4;
+	margin: 0;
+}
+
+.width {
+	width: 100vw;
+}
+
+.btn {
+	background-color: transparent;
+	border: none;
+	color: var(--clr-7);
+	font-size: clamp(1rem, 2vw, 1.2rem);
+	cursor: pointer;
+	border: 1px solid var(--clr-7);
+	padding: .2rem;
+	border-radius: 5px;
+}
+
+
+.btn:hover {
+	background-color: var(--clr-7);
+	color: var(--clr-2);
+	transition: .5s;
+}
+@media (max-width: 35rem) {
+	.title {
+		display: none;
+	}
+
+}
+

@@ -1,0 +1,143 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+	--clr-1: #100c08;
+	--clr-2: #f0f8ff;
+	--clr-3: #ffffff;
+	--clr-4: #b53389;
+	--clr-5: #00b7eb;
+	--clr-6: #f00000;
+	--clr-7: #007fff;
+	--clr-8: #AEDEFC;
+	--clr-9: #43425D;
+	--clr-10: #ec3b83;
+	--clr-11: #91C8E4;
+	--clr-12: #F4F6F9;
+	--clr-13: #E9ECEF;
+	--clr-14: #495057;
+	--clr-15: #f00000;
+
+	/* hsla */
+	--hsla: hsla(255, 100%, 100%, 0.5);
+	--hsla-2: hsla(255, 100%, 100%, 0.4);
+
+	--hsl: hsl(0 0% 0% / .5);
+}
+
+.bg {
+	color: var(--clr-7);
+}
+
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-12);
+}
+
+.center {
+	padding: .5rem;
+	width: clamp(400px, 100%, 200px);
+}
+
+.login {
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	border-top: 4px solid var(--clr-7);
+	border-radius: 5px 5px 0 0;
+}
+
+.login .title {
+	background-color: var(--clr-3);
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.errors {
+	color: var(--clr-15);
+}
+
+form {
+	padding: 1rem;
+	height: 320px;
+	background-color: var(--clr-3);
+}
+
+form input[type="email"], input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: .7rem 2.7rem;
+	border: none;
+	border: .5px solid var(--hsl);
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	color: var(--clr-3);
+	border: none;
+	width: 100%;
+	border-radius: 5px;
+	padding: .7rem .2rem;
+	border: 1px solid var(--clr-7);
+	color: var(--clr-3);
+	background-color: var(--clr-7);
+	font-size: clamp(.7rem, 1vw, .9rem);
+	cursor: pointer;
+	transition: .2s;
+}
+
+input[type="submit"]:hover {
+	border: 1px solid var(--clr-7);
+	background-color: transparent;
+	color: var(--clr-7);
+}
+
+form input:focus {
+	outline-color: var(--clr-7);
+}
+
+.box {
+	position: relative;
+	padding-block: .5rem;
+}
+
+.box i {
+	position: absolute;
+	padding: .7rem;
+	background-color: var(--clr-13);
+	border: .5px solid var(--hsl);
+	color: var(--clr-14);
+}
+
+#back {
+	color: var(--clr-7);
+	text-decoration: none;
+}
+
+.btn {
+	width: 100px;
+	margin-block: 1rem;
+}
+
+form .show, .check {
+	display: flex;
+	gap: .2rem;
+	padding-block: .5rem;
+	font-size: clamp(.7rem, 1vw, .8rem);
+}
+
+form .remember {
+	display: flex;
+	justify-content: space-between;
+	font-size: clamp(.7rem, 1vw, .8rem);
+}

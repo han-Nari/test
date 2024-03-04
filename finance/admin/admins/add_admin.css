@@ -1,0 +1,82 @@
+.center {
+	padding: 5rem;
+}
+
+.add_admin {
+	width: 100%;
+	border: 1px solid var(--hsl);
+	border-radius: 5px;
+}
+
+.add_admin .title {
+	background-color: var(--clr-7);
+	display: block;
+	color: var(--clr-3);
+	padding: 1rem;
+	font-size: clamp(1.1rem, 2vw, 1.2rem);
+	border-radius: 5px 5px 0 0;
+}
+
+.errors {
+	color: var(--clr-14);
+}
+
+form {
+	padding: 1rem;
+}
+
+form input[type="email"], input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: .7rem 2.7rem;
+	border: none;
+	border: .5px solid var(--hsl);
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	color: var(--clr-3);
+	border: none;
+	border-radius: 5px;
+	padding: .5rem .2rem;
+	border: 1px solid var(--clr-7);
+	color: var(--clr-7);
+	font-size: clamp(.7rem, 1vw, .9rem);
+	cursor: pointer;
+	transition: .2s;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--clr-7);
+	color: var(--clr-3);
+}
+
+form input:focus {
+	outline-color: var(--clr-7);
+}
+
+.box {
+	position: relative;
+	padding-block: .5rem;
+}
+
+.box i {
+	position: absolute;
+	width: 40px;
+	aspect-ratio: 1;
+	background-color: #E9ECEF;
+	border: .5px solid var(--hsl);
+	color: #495057;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(.9rem, 2vw, 1rem);
+}
+
+#back {
+	color: var(--clr-7);
+	text-decoration: none;
+}
+
+.btn {
+	width: 100px;
+}

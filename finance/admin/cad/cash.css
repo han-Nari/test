@@ -1,0 +1,38 @@
+a {
+	text-decoration: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%),1fr));
+	gap: 2rem;
+	padding: 2rem;
+}
+
+
+.bg-color {
+	padding: 1.5rem;
+	background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+	color: var(--clr-2);
+	display: flex;
+	font-size: clamp(1rem, 2vw, 1.2rem);
+	justify-content: center;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.pad {
+	padding-inline: 2rem;
+}
+
+.one {
+	background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+}
+
+.twos {
+	background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
+}
+
+.three {
+	background: linear-gradient(220.55deg, #5D85A6 0%, #0E2C5E 100%);
+}
+
